@@ -1,0 +1,19 @@
+<h1>Listing ideas</h1>
+
+<div class="idea-gallery">
+<% @ideas.each do |idea| %>
+  <div class="solo fleft">
+    
+      <div class="caption"><%= idea.name %></div>
+      <%= image_tag(idea.picture_url, :width => 200) if idea.picture.present? %>
+      <div class="controls">
+        <%= link_to 'Edit', edit_idea_path(idea), :class=>"edit_link" %>
+        <%= link_to 'x', idea, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"delete_link" %>
+      </div>
+    
+  </div>
+<% end %>
+</div>
+
+<br class="clear"/>
+<%= link_to 'New Idea', new_idea_path %>

@@ -1,0 +1,80 @@
+.navbar {
+	position: relative;
+	margin-bottom: 5em;
+}
+
+.solo {
+	width: 200px;
+	position: relative;
+	overflow: hidden;
+	margin: 1em 1em 1em 0;
+	border: 3px solid lightGrey;
+}
+
+.solo .link {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+	.solo:hover img {
+		opacity: .8;
+	}
+
+	.solo .caption {
+		background: rgba(0, 0, 0, 0.6);
+		color: #00EBFF;
+		position: absolute;
+		z-index: 3;
+		bottom: -24px;
+		width: 100%;
+		padding: 3px 0;
+		text-align: center;
+		font-weight: bold;
+		-webkit-transition-property: bottom;
+        -webkit-transition-duration: 0.5s;
+	}
+
+	.solo:hover .caption {
+		bottom: 0;
+	}
+
+.solo .controls {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+	.solo:hover .controls a {
+		visibility: visible;
+		padding: 3px;
+		color: white;
+	}
+
+	.edit_link {
+		background: green;
+	}
+
+	.delete_link {
+		background: red;
+	}
+
+	.controls a:hover {
+		color: #FFF;
+		text-decoration: none;
+	}
+
+/* Universal Class*/
+
+.fleft {
+	float: left;
+}
+
+.fright {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
