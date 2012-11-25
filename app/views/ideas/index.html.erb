@@ -4,7 +4,7 @@
 <% @ideas.each do |idea| %>
   <div class="solo fleft">
     
-      <div class="caption"><%= idea.name %></div>
+      <%= link_to idea.name, idea_path(idea), :class=>"caption" %>
       <%= image_tag(idea.picture_url, :width => 200) if idea.picture.present? %>
       <div class="controls">
         <%= link_to 'Edit', edit_idea_path(idea), :class=>"edit_link" %>

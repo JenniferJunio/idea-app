@@ -5,6 +5,7 @@
 
 .solo {
 	width: 200px;
+	height: 110px;
 	position: relative;
 	overflow: hidden;
 	margin: 1em 1em 1em 0;
@@ -19,6 +20,10 @@
 
 	.solo:hover img {
 		opacity: .8;
+	}
+
+	img.idea-photo {
+		border: 3px solid lightGrey;
 	}
 
 	.solo .caption {
@@ -37,6 +42,7 @@
 
 	.solo:hover .caption {
 		bottom: 0;
+		text-decoration: none;
 	}
 
 .solo .controls {
